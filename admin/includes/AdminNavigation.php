@@ -39,7 +39,7 @@
                         <a href="javascript:;" data-toggle="collapse" data-target="#postsDropdown"><i class="fa fa-fw fa-arrows-v"></i>Wpisy<i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="postsDropdown" class="collapse">
                             <li>
-                                <a href="#">Wszystkie wpisy</a>
+                                <a href="./posts.php">Wszystkie wpisy</a>
                             </li>
                             <li>
                                 <a href="#">Dodaj wpis</a>
@@ -47,7 +47,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i>Strony</a>
+                        <a href="./categories.php"><i class="fa fa-fw fa-desktop"></i>Strony</a>
                     </li>
                     <li class="active">
                         <a href="blank-page.html"><i class="fa fa-fw fa-file"></i>Komentarze</a>
