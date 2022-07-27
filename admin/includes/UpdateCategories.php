@@ -1,4 +1,3 @@
-
 <?php 
   if(isset($_POST['updateCategory'])) {
     $editCatId = $_POST['cat_title'];

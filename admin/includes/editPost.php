@@ -63,7 +63,7 @@
     <input value="<?php echo $post_title; ?>" type="text" class="form-control" name="post_title">
   </div>
   <div class="form-group">
-    <label for="post_category">Wybierz stronę na której zostanie opublikowany wpis</label>
+    <label for="post_category">Wybierz stronę</label>
     <select name="post_category" id="">
       <?php 
         $query = "SELECT * FROM categories";
