@@ -1,4 +1,12 @@
 <?php 
+  function ConfirmQuery($result) {
+    global $connection;
+
+    if(!$result) {
+      die("QUERY FAILED ." . mysqli_error($connection));
+    }
+  }
+
   function InsertCategories() {
     global $connection;
 
@@ -14,7 +22,7 @@
         $createCategoryQuery = mysqli_query($connection, $query);
 
         if(!$createCategoryQuery) {
-          die('QUERY FIELD' . mysqli_error($connection));
+          die('QUERY FAILED' . mysqli_error($connection));
         }
       }
     }

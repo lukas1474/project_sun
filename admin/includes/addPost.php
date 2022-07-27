@@ -14,6 +14,13 @@
     $postCommentCount = 4;
 
     move_uploaded_file($postImageTemp, "../images/$postImage" );
+
+    $query = "INSERT INTO posts(post_category_id, post_title, post_author, post_date, post_image, post_content, post_tags, post_comment_count, post_status) ";
+    $query .= "VALUES('{$postCategoryId}', '{$postTitle}', '{$postAuthor}', now(), '{$postImage}', '{$postContent}', '{$postTags}', '{$postCommentCount}', '{$postStatus}' ) ";
+
+    $addPostQuery = mysqli_query($connection, $query);
+
+    ConfirmQuery($addPostQuery);
   }
 ?>
 <form action="" method="post" enctype="multipart/form-data">

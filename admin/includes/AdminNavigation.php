@@ -42,7 +42,7 @@
                                 <a href="./posts.php">Wszystkie wpisy</a>
                             </li>
                             <li>
-                                <a href="#">Dodaj wpis</a>
+                                <a href="posts.php?source=addPost">Dodaj wpis</a>
                             </li>
                         </ul>
                     </li>
