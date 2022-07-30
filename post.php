@@ -27,10 +27,10 @@
 
 						?>
 
-						<h1 class="page-header">
+						<!-- <h1 class="page-header">
 							Page Heading
           		<small>Secondary Text</small>
-        		</h1>
+        		</h1> -->
           	<!-- First Blog Post -->
         		<h2>
           		<a href="#"><?php echo $post_title ?></a>
@@ -72,6 +72,11 @@
             if(!$commentCreateQuery) {
               die("QUERY FAILED ." . mysqli_error($connection));
             }
+
+            $query = "UPDATE posts SET post_comment_count = post_comment_count + 1 ";
+            $query .= "WHERE post_id = $post_id ";
+
+            $updateCommentCount = mysqli_query($connection, $query);
           }
         ?>
         
