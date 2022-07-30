@@ -55,7 +55,7 @@
 
       echo "<td><a href='comments.php?approve='>Zatwierdź</a></td>";
       echo "<td><a href='comments.php?unapproved='>Odrzuć</a></td>";
-      echo "<td><a href='comments.php?delete='>Usuń</a></td>";
+      echo "<td><a href='users.php?delete={$user_id}'>Usuń</a></td>";
       echo "</tr>";
     }
   ?>
@@ -79,10 +79,10 @@
   }
 
   if(isset($_GET['delete'])) {
-    $deleteCommentId = $_GET['delete'];
+    $deleteUserId = $_GET['delete'];
 
-    $query = "DELETE FROM comments WHERE comment_id = {$deleteCommentId} ";
-    $deleteQuery = mysqli_query($connection, $query);
-    header('Location: comments.php');
+    $query = "DELETE FROM users WHERE user_id = {$deleteUserId} ";
+    $deleteUserQuery = mysqli_query($connection, $query);
+    header('Location: users.php');
   }
 ?>
