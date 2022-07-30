@@ -27,9 +27,9 @@
   <div class="form-group">
     <label for="user_role">Nadaj poziom dostępu</label>
     <select name="user_role" id="">
-      <option value="subscriber">wybierz</option>
+      <option value="użytkownik">wybierz</option>
       <option value="admin">Administrator</option>
-      <option value="subscriber">Normalny</option>
+      <option value="użytkownik">Normalny</option>
     </select>
   </div>
   <div class="form-group">
