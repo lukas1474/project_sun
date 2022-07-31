@@ -4,8 +4,8 @@
 <?php include"includes/navigation.php" ?>
   <div class="container">
     <div class="row">
-      <div class="col-md-8">
-				<h1>Imperare sibi maximum imperium est</h1>
+      <div class="col-md-8 container">
+				<h1 class="pageTitle">Imperare sibi maximum imperium est</h1>
 				<?php 
 					$query = "SELECT * FROM posts WHERE post_status = 'published' ";
 					$selectAllPostsQuery = mysqli_query($connection, $query);
@@ -27,7 +27,7 @@
 						// } else {
 					
 						?>
-        			<h2>
+							<h2>
           			<a href="post.php?p_id=<?php echo $post_id; ?>"><?php echo $post_title ?></a>
         			</h2>
         			<p class="lead">

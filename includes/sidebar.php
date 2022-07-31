@@ -13,7 +13,7 @@
       </div>
     </form>
   </div>
-  <div class="well">
+  <!-- <div class="well">
     <h4>Blog Search</h4>
     <form action="search.php" method="post">
       <div class="input-group">
@@ -25,7 +25,7 @@
         </span>
       </div>
     </form>
-  </div>
+  </div> -->
   <!-- <div class="well">
     <?php 
       $query = "SELECT * FROM categories";

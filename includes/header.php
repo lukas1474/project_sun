@@ -1,4 +1,6 @@
 <?php include "functionsHeadSection.php" ?>
+<?php include "scss/footerStyles.php" ?>
+<?php include "scss/mainStyles.php" ?>
 <?php ob_start(); ?>
 
 <!DOCTYPE html>
@@ -12,4 +14,4 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/blog-home.css" rel="stylesheet">
 </head>
-<body>
+<body class="root">

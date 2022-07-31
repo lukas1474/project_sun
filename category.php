@@ -4,7 +4,7 @@
 <?php include"includes/navigation.php" ?>
 
   <div class="container">
-    <div class="row">
+    <div class="row  bodyContainer">
       <div class="col-md-8">
 				<?php 
 					if(isset($_GET['category'])) {
@@ -18,7 +18,7 @@
 						$pageTitle = $row['cat_page_title'];
 
 						?>
-						<h1><?php echo $pageTitle; ?></h1>
+						<h1 class="pageTitle"><?php echo $pageTitle; ?></h1>
 						<?php	
 					} 
 				?>
