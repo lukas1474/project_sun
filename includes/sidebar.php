@@ -26,7 +26,7 @@
       </div>
     </form>
   </div>
-  <div class="well">
+  <!-- <div class="well">
     <?php 
       $query = "SELECT * FROM categories";
       $selectCategoriesSidebar = mysqli_query($connection, $query);
@@ -46,6 +46,6 @@
         </ul>
       </div>
     </div>
-  </div>
+  </div> -->
   <?php include "widget.php" ?>
 </div>

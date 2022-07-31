@@ -12,12 +12,17 @@
 
     if(isset($_POST['submit'])) {
       $catTitle = $_POST['cat_title'];
+      $catPageTitle = $_POST['cat_page_title'];
+      $catMetaTitle = $_POST['cat_meta_title'];
+      $catMetaDescription = $_POST['cat_meta_description'];
+      $catMetaIndex = $_POST['cat_meta_index'];
+      $catMetaFollow = $_POST['cat_meta_follow'];
 
       if($catTitle == "" || empty($catTitle)) {
         echo "To pole nie może być puste";
       } else {
-        $query = "INSERT INTO categories(cat_title) ";
-        $query .= "VALUE('{$catTitle}') "; 
+        $query = "INSERT INTO categories(cat_title, cat_page_title, cat_meta_title, cat_meta_description, cat_meta_index, cat_meta_follow) ";
+        $query .= "VALUE('{$catTitle}', '{$catPageTitle}', '{$catMetaTitle}', '{$catMetaDescription}', '{$catMetaIndex}', '{$catMetaFollow}') "; 
 
         $createCategoryQuery = mysqli_query($connection, $query);
 
