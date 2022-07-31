@@ -81,6 +81,6 @@
     </select>
   </div>
   <div class="form-group">
-    <input class="btn btn-primary" type="submit" name="updateCategory" value="Zaktualizuj">
+    <input class="btn btn-primary" type="submit" name="updateCategory" value="Potwierdź zmiany w prowincji">
   </div>
 </form>

@@ -1,20 +1,19 @@
-<?php include "includes/AdminHeader.php" ?>
+<?php include "includes/adminHeader.php" ?>
 
 <div id="wrapper">
-  <?php include "includes/AdminNavigation.php" ?>
+  <?php include "includes/adminNavigation.php" ?>
   <div id="page-wrapper">
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-12">
-          <h1 class="page-header">
-            Dzień dobry :)
-            <small>widok stron</small>
-          </h1>
+          <h2 class="page-header">
+            Lista prowincji
+          </h2>
           <div class="col-md-6">
             <?php InsertCategories(); ?>
             <form action="" method="post">
               <div class="form-group">
-                <label for="cat_title">Dodaj nową stronę</label>
+                <label for="cat_title">Dodaj nową prowincję</label>
                 <input class="form-control" type="text" name="cat_title">
               </div>
               <div class="form-group">
@@ -53,7 +52,7 @@
               <thead>
                 <tr>
                   <th>Id</th>
-                  <th>Nazwa strony</th>
+                  <th>Nazwa prowincji</th>
                 </tr>
               </thead>
               <tbody>
@@ -67,5 +66,5 @@
     </div>
   </div>
 
-<?php include "includes/AdminFooter.php" ?>
+<?php include "includes/adminFooter.php" ?>
     

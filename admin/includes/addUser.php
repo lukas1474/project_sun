@@ -45,6 +45,6 @@
     <input type="password" class="form-control" name="user_password">
   </div>
   <div class="form-group">
-    <input type="submit" class="btn btn-primary" name="create_user" value="Utwórz">
+    <input type="submit" class="btn btn-primary" name="create_user" value="Podpisz kartę">
   </div>
 </form>

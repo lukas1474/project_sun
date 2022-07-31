@@ -5,10 +5,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-				<!-- <h2 class="page-header">
-					Page Heading
-          <small>Secondary Text</small>
-        </h2> -->
+				<h1>Imperare sibi maximum imperium est</h1>
 				<?php 
 					$query = "SELECT * FROM posts WHERE post_status = 'published' ";
 					$selectAllPostsQuery = mysqli_query($connection, $query);

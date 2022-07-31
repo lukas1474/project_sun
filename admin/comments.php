@@ -1,15 +1,14 @@
-<?php include "includes/AdminHeader.php" ?>
+<?php include "includes/adminHeader.php" ?>
 
 <div id="wrapper">
-  <?php include "includes/AdminNavigation.php" ?>
+  <?php include "includes/adminNavigation.php" ?>
   <div id="page-wrapper">
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-12">
-          <h1 class="page-header">
-            Dzień dobry :)
-            <small>widok wpisów</small>
-          </h1>
+          <h2 class="page-header">
+            Publiczne wypowiedzi obywateli do publikacji
+          </h2>
           <?php 
             if(isset($_GET['source'])) {
               $source = $_GET['source'];
@@ -17,14 +16,6 @@
               $source = '';
             }
             switch($source) {
-              case 'addPost';
-              include "includes/addPost.php";
-              break;
-
-              case 'editPost';
-              include "includes/editPost.php";
-              break;
-
               default:
               include "includes/viewAllComments.php";
               break;
@@ -34,5 +25,5 @@
       </div>
     </div>
   </div>
-<?php include "includes/AdminFooter.php" ?>
+<?php include "includes/adminFooter.php" ?>
     

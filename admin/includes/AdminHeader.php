@@ -1,17 +1,13 @@
 <?php include "functions.php" ?>
 <?php include "../includes/db.php" ?>
+<?php include "adminFunctions/functionsPosts.php" ?>
+<?php include "adminFunctions/functionsLogout.php" ?>
+<?php include "adminFunctions/functionsComments.php" ?>
+<?php include "adminFunctions/functionsUsers.php" ?>
 <?php ob_start(); ?>
 <?php session_start(); ?>
 
-<?php 
-  if(isset($_SESSION['user_role'])) {
-    if($_SESSION['user_role'] !== 'admin') {
-      header("Location: ../index.php");
-    }
-  } else if(!isset($_SESSION['user_role'])) {
-    header("Location: ../index.php");
-  }
-?>
+<?php Logout();?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +17,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>admin page - Imperium</title>
+  <title></title>
+  <meta name="robots" content="noindex, nofollow"/>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/sb-admin.css" rel="stylesheet">
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">

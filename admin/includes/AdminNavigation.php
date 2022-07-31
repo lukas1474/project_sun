@@ -10,7 +10,7 @@
   </div>
   <ul class="nav navbar-right top-nav">
     <li>
-      <a href="../index.php">Powrót na front</a>
+      <a href="../index.php">Wyjdź z namiotu</a>
     </li>
     <li class="dropdown">
       <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -21,7 +21,7 @@
         </li>
         <li class="divider"></li>
         <li>
-          <a href="../includes/logout.php"><i class="fa fa-fw fa-power-off"></i>Wyloguj</a>
+          <a href="../includes/logout.php"><i class="fa fa-fw fa-power-off"></i>Odejdź</a>
         </li>
       </ul>
     </li>
@@ -29,38 +29,38 @@
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav side-nav">
       <li>
-        <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+        <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Sala narad</a>
       </li>
       <li>
-        <a href="javascript:;" data-toggle="collapse" data-target="#postsDropdown"><i class="fa fa-fw fa-arrows-v"></i>Wpisy<i class="fa fa-fw fa-caret-down"></i></a>
+        <a href="javascript:;" data-toggle="collapse" data-target="#postsDropdown"><i class="fa fa-fw fa-arrows-v"></i>Edykty<i class="fa fa-fw fa-caret-down"></i></a>
         <ul id="postsDropdown" class="collapse">
           <li>
-            <a href="./posts.php">Wszystkie wpisy</a>
+            <a href="./posts.php">Wszystkie edykty</a>
           </li>
           <li>
-            <a href="posts.php?source=addPost">Dodaj wpis</a>
+            <a href="posts.php?source=addPost">Ogłoś edykt</a>
           </li>
         </ul>
       </li>
       <li>
-        <a href="./categories.php"><i class="fa fa-fw fa-desktop"></i>Strony</a>
+        <a href="./categories.php"><i class="fa fa-fw fa-desktop"></i> Prowincje</a>
       </li>
       <li class="">
-        <a href="./comments.php"><i class="fa fa-fw fa-file"></i>Komentarze</a>
+        <a href="./comments.php"><i class="fa fa-fw fa-file"></i> Wypowiedzi</a>
       </li>
       <li>
-        <a href="#" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i>Użytkownicy<i class="fa fa-fw fa-caret-down"></i></a>
+        <a href="#" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i>Demografia<i class="fa fa-fw fa-caret-down"></i></a>
         <ul id="demo" class="collapse">
           <li>
-            <a href="users.php">Wszyscy użytkownicy</a>
+            <a href="users.php">Spis</a>
           </li>
           <li>
-            <a href="users.php?source=addUser">Dodaj użytkownika</a>
+            <a href="users.php?source=addUser">Dodaj obywatela</a>
           </li>
         </ul>
       </li>
       <li>
-        <a href="profile.php"><i class="fa fa-fw fa-dashboard"></i>Profil</a>
+        <a href="profile.php"><i class="fa fa-fw fa-dashboard"></i> Karta obywatela</a>
       </li>
     </ul>
   </div>

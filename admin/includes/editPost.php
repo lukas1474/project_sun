@@ -65,19 +65,7 @@
   <div class="form-group">
     <label for="post_category">Wybierz stronę</label>
     <select name="post_category" id="">
-      <?php 
-        $query = "SELECT * FROM categories";
-        $selectCategoriesInEditPost = mysqli_query($connection, $query);
-
-        ConfirmQuery($selectCategoriesInEditPost);
-
-        while($row = mysqli_fetch_assoc($selectCategoriesInEditPost)) {
-          $cat_id = $row['cat_id'];
-          $cat_title = $row['cat_title'];
-
-          echo "<option value='{$cat_id}'>{$cat_title}</option>";
-        }
-      ?>
+      <?php EditPageForPost(); ?>
     </select>
   </div>
   <div class="form-group">

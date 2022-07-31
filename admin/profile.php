@@ -1,4 +1,4 @@
-<?php include "includes/AdminHeader.php" ?>
+<?php include "includes/adminHeader.php" ?>
 
 <?php 
   if(isset($_SESSION['username'])) {
@@ -44,15 +44,14 @@
 ?>
 
 <div id="wrapper">
-  <?php include "includes/AdminNavigation.php" ?>
+  <?php include "includes/adminNavigation.php" ?>
   <div id="page-wrapper">
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-12">
-          <h1 class="page-header">
-            Dzień dobry :)
-            <small>widok wpisów</small>
-          </h1>
+          <h2 class="page-header">
+            Karta obywatela
+          </h2>
           <form action="" method="post" enctype="multipart/form-data">
             <div class="form-group">
               <label for="user_firstname">Imię</label>
@@ -95,4 +94,4 @@
       </div>
     </div>
   </div>
-<?php include "includes/AdminFooter.php" ?>  
+<?php include "includes/adminFooter.php" ?>  

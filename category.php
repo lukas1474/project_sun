@@ -2,11 +2,28 @@
 <?php include"includes/header.php" ?>
 
 <?php include"includes/navigation.php" ?>
+
   <div class="container">
     <div class="row">
       <div class="col-md-8">
 				<?php 
+					if(isset($_GET['category'])) {
+						$titleToShow = $_GET['category'];
+					}
 
+					$query = "SELECT * FROM categories WHERE cat_id = $titleToShow ";
+					$selectTitleToShow = mysqli_query($connection, $query);
+
+					while($row = mysqli_fetch_assoc($selectTitleToShow)) {
+						$pageTitle = $row['cat_page_title'];
+
+						?>
+						<h1><?php echo $pageTitle; ?></h1>
+						<?php	
+					} 
+				?>
+			
+				<?php 
           if(isset($_GET['category'])) {
             $postCategoryToShow = $_GET['category'];
           }
@@ -23,12 +40,6 @@
 						$post_content = substr($row['post_content'], 0, 100);
 
 						?>
-
-						<!-- <h1 class="page-header">
-							Page Heading
-          		<small>Secondary Text</small>
-        		</h1> -->
-          	<!-- First Blog Post -->
         		<h2>
           		<a href="post.php?p_id=<?php echo $post_id; ?>"><?php echo $post_title ?></a>
         		</h2>

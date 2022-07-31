@@ -1,15 +1,14 @@
-<?php include "includes/AdminHeader.php" ?>
+<?php include "includes/adminHeader.php" ?>
 
 <div id="wrapper">
-  <?php include "includes/AdminNavigation.php" ?>
+  <?php include "includes/adminNavigation.php" ?>
   <div id="page-wrapper">
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-12">
-          <h1 class="page-header">
-            Dzień dobry :)
-            <small>widok wpisów</small>
-          </h1>
+          <h2 class="page-header">
+            Wszystkie ogłoszone w prowincjach edykty
+          </h2>
           <?php 
             if(isset($_GET['source'])) {
               $source = $_GET['source'];
@@ -35,4 +34,4 @@
     </div>
   </div>
 
-<?php include "includes/AdminFooter.php" ?>    
+<?php include "includes/adminFooter.php" ?>

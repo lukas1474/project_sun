@@ -10,8 +10,6 @@
       <th>Tagi</th>
       <th>Komentarze</th>
       <th>Data</th>
-      <th>Edycja</th>
-      <th>Usuwanie</th>
     </tr>
   </thead>
   <tbody>
@@ -57,12 +55,4 @@
   ?>
   </tbody>
 </table>
-<?php 
-  if(isset($_GET['delete'])) {
-    $deletePostId = $_GET['delete'];
-
-    $query = "DELETE FROM posts WHERE post_id = {$deletePostId} ";
-    $deleteQuery = mysqli_query($connection, $query);
-    header('Location: posts.php');
-  }
-?>
+<?php DeletePost(); ?>
